@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { RegisterRoutingModule } from './register-routing.module';
+import { RegisterPageRoutingModule } from './register-page-routing.module';
 import { RegisterComponent } from './register.component';
-import { CarouselModule } from 'ngx-owl-carousel-o';
 import { FormsModule } from '@angular/forms';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 import { FeatherIconModule } from 'src/app/shared/module/feather.module';
 
 
@@ -14,10 +14,10 @@ import { FeatherIconModule } from 'src/app/shared/module/feather.module';
   ],
   imports: [
     CommonModule,
-    RegisterRoutingModule,
+    RegisterPageRoutingModule,
     FormsModule,
     CarouselModule,
     FeatherIconModule
-  ],
+  ]
 })
-export class RegisterModule { }
+export class RegisterPageModule { }

@@ -366,21 +366,8 @@ export class routes {
     return this.auth + 'login';
   }
   public static get register(): string {
-    return this.auth + 'register-page/register';
+    return this.auth + '/register';
   }
-  public static get register3(): string {
-    return this.auth + 'register-page/register-step-three';
-  }
-  public static get register2(): string {
-    return this.auth + 'register-page/register-step-two';
-  }
-  public static get register5(): string {
-    return this.auth + 'register-page/register-step-five';
-  }
-  public static get register1(): string {
-    return this.auth + 'register-page/register-step-one';
-  }
-
   // Error Routes
 
   public static get error(): string {

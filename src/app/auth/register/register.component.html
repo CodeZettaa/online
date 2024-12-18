@@ -30,7 +30,7 @@
       <div class="login-wrapper">
         <div class="loginbox">
           <div class="img-logo">
-            <img src="assets/img/logo.svg" class="img-fluid" alt="Logo" />
+            <img src="assets/img/logo_1.png" class="img-fluid" alt="Logo" />
             <div class="back-home">
               <a [routerLink]="routes.home">Back to Home</a>
             </div>
@@ -62,29 +62,8 @@
                   ></i>
                 }</span>
               </div>
-                        <div class="password-strength" [ngClass]="{
-                'poor-active': passwordResponce.passwordResponceKey === '0',
-                'avg-active': passwordResponce.passwordResponceKey === '1',
-                'strong-active': passwordResponce.passwordResponceKey === '2',
-                'heavy-active': passwordResponce.passwordResponceKey === '3'
-              }" id="passwordStrength">
-                <span id="poor" class="active"></span>
-                <span id="weak" class="active"></span>
-                <span id="strong" class="active"></span>
-                <span id="heavy" class="active"></span>
-              </div>
-                        <div id="passwordInfo" [ngClass]="{
-                weak: passwordResponce.passwordResponceKey === '0',
-                average: passwordResponce.passwordResponceKey === '1',
-                good: passwordResponce.passwordResponceKey === '2',
-                great: passwordResponce.passwordResponceKey === '3'
-              }">
-                @if (typingStarted && passwordResponce.passwordResponceKey === '0') {
-                  <img alt="img" [src]="passwordResponce.passwordResponceImage"
-                    />
-                }
-                {{ passwordResponce.passwordResponceText }}
-              </div>
+  
+                
             </div>
 
             <div class="form-check remember-me">
@@ -102,20 +81,7 @@
             </div>
           </div>
           <div class="google-bg text-center">
-            <span><a href="javascript:void(0)">Or sign in with</a></span>
-            <div class="sign-google">
-              <ul>
-                <li>
-                  <a href="javascript:void(0)"><img src="assets/img/net-icon-01.png" class="img-fluid"
-                    alt="Logo" />
-                  Sign In using Google</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)"><img src="assets/img/net-icon-02.png" class="img-fluid"
-                  alt="Logo" />Sign In using Facebook</a>
-                </li>
-              </ul>
-            </div>
+
             <p class="mb-0">
               Already have an account? <a [routerLink]="routes.login">Sign in</a>
             </p>
