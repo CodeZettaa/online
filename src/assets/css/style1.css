@@ -24625,7 +24625,7 @@ color: #efeff2 ;
   }
   .header-page,
   .header-page .header-nav {
-    height: 60px;
+    min-height: 60px;
   }
   .header-border {
     padding: 4px 20px;
